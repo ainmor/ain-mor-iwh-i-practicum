@@ -1,58 +1,107 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
-body, * {
+* {
+    box-sizing: border-box;
+}
+
+body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 2rem;
+    background-color: #f5f7fa;
+    color: #1f2937;
 }
 
 h1 {
-    margin: 1rem;
+    margin-bottom: 1.5rem;
 }
 
-.cards {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+a {
+    color: #0b66c3;
+    text-decoration: none;
+    font-weight: 500;
 }
 
-.card {
-    flex-basis: 31%;
-    margin: 1rem 0.4rem;
-    padding: 1rem 0.4rem 2.5rem 0.4rem;
-    border: solid 1px lightgrey;
-    border-radius: 15px;
-    box-shadow: 3px 2px 6px lightgrey;
+a:hover {
+    text-decoration: underline;
 }
 
-.card__email {
-    font-size: 1rem;
+table {
+    width: 100%;
+    max-width: 900px;
+    margin-top: 1.5rem;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+th,
+td {
+    padding: 0.85rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+th {
+    background-color: #f0f3f6;
+    font-weight: 700;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:hover td {
+    background-color: #fafafa;
 }
 
 .form-wrapper {
-    font-size: 18px;
-    max-width: 768px;
-    margin: 2rem auto;
+    max-width: 600px;
+    margin-top: 2rem;
     padding: 2rem;
-    border: solid 1px lightgrey;
-    border-radius: 15px;
-    box-shadow: 3px 2px 6px lightgrey;
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-label, input {
-    margin-top: 5px;
+form div {
+    margin-bottom: 1rem;
+}
+
+label {
     display: block;
-    font-size: inherit;
+    margin-bottom: 0.35rem;
+    font-weight: 500;
 }
 
 input[type="text"] {
-    padding: .25rem;
+    width: 100%;
+    padding: 0.65rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    font-size: 1rem;
 }
 
+input[type="text"]:focus {
+    outline: none;
+    border-color: #0b66c3;
+}
+
+button,
 input[type="submit"] {
-    background-color: lightgrey;
+    padding: 0.65rem 1.2rem;
     border: none;
-    padding: .375rem 1rem;
-    margin-top: 10px;
+    border-radius: 5px;
+    background-color: #0b66c3;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: #084f96;
 }
