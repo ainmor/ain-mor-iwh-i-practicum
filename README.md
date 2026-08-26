@@ -28,3 +28,12 @@ ___
 - You must create a developer test account and link to it in your README.md file. Submissions that do not meet this requirement will not be considered.
 
 # Integrating With HubSpot I: Foundations Practicum
+
+## HubSpot Custom Object
+
+Custom object: Books
+
+Books list view:
+https://app-eu1.hubspot.com/contacts/149184871/objects/2-252435356/views/all/list
+
+This practicum uses a HubSpot custom object named Books with the properties Name, Author, and Genre.
